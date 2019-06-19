@@ -1,0 +1,9 @@
+!.gitignore
+!*.dvc
+/evaluate_model_config.yml
+/featurize_config.yml
+/split_train_test_config.yml
+/train_clf_config.yml
+/eval.txt
+/train_config.yml
+/evaluate_config.yml

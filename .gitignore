@@ -1,0 +1,11 @@
+.idea/
+*/.ipynb_checkpoints/*
+__pycache__
+.DS_Store
+
+.env
+data/*
+experiments/*
+mlruns/*
+models/*
+notebooks/OLD/*

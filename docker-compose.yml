@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+
+  dvc-2-iris-demo:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+      args:
+        GIT_CONFIG_USER_NAME: $GIT_CONFIG_USER_NAME
+        GIT_CONFIG_EMAIL: $GIT_CONFIG_EMAIL
+    image: dvc-2-iris-demo:latest
+    env_file:
+      - .env
+    environment:
+      PYTHONPATH: '/home/dvc-2-iris-demo'
+      PROJECT_PATH: '/home/dvc-2-iris-demo'
+      LANG: 'C.UTF-8'
+    ports:
+      - 8888:8888
+    volumes:
+      - ./:/home/dvc-2-iris-demo
+      - ./config:/home/dvc-2-iris-demo/config
+      - ./data:/home/dvc-2-iris-demo/data
+      - ./.dvc:/home/dvc-2-iris-demo/.dvc
+      - ./notebooks:/home/dvc-2-iris-demo/notebooks
+      - ./src:/home/dvc-2-iris-demo/src
