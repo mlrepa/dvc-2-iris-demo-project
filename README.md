@@ -28,7 +28,7 @@ Directory Structure
 ### 1. Clone this repository
 
 ```bash
-git clone https://gitlab.com/7labs.ru/tutorials-dvc/dvc-2-iris-demo-project.git
+git clone https://github.com/mlrepa/dvc-2-iris-demo-project.git
 ```
 
 cd dvc-2-iris-demo-project
